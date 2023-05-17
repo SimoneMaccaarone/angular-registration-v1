@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(170deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+  font-family: Glory, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-body {
+  padding-top: 20px;
+  height: auto;
+}
+
+.container {
+  width: 97%;
+  display: grid;
+  grid-template-columns: (10 / 1fr);
+  grid-template-rows: (5 / 1fr);
+  grid-template-areas:
+  "T T T T T . . . M M"
+  "T T T T T H . . V ."
+  ". . . . . . . . . ."
+  "C C C . . . . . . ."
+  "C C C . . . . . . .";
+}
+
+.title {
+  grid-area: T;
+}
+
+.menu {
+  grid-area: M;
+}
+
+
+/* HOME PAGE */
+
+.home-body {
+  height: 100vh;
+  padding-bottom: 0px;
+}
+
+.home-box {
+  width: 700px;
+  height: 700px;
+  border-radius: 800px;
+  margin: 0px;
+  grid-area: H;
+  background: linear-gradient(130deg, rgba(255,255,255,1) 18%, rgba(0,212,255,0.6) 30%,  rgba(9,9,121,1) 100%);
+  box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+p {
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  top: 450px;
+  left: 45%;
+  width: 850px;
+  text-shadow: 0px 0px 6px rgba(9,9,121,0.8);
+}
+
+.void-box {
+  grid-area: V;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-right: 100px;
+  background: linear-gradient(110deg, rgba(0,212,255,0.6) 10%,  rgba(9,9,121,1) 100%);
+  box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.contacts {
+  grid-area: C;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+img {
+  width: 25px;
+  margin-left: 25px;
+}
